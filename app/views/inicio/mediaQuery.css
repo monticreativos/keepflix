@@ -1,0 +1,78 @@
+@media (min-width: 768px) {
+  .card .card-item {
+    width: 32%;
+    height: 9rem;
+  }
+  .open-menu-mobile label {
+    display: none;
+  }
+  .list-menu {
+    position: relative;
+    height: auto;
+    top: 0;
+    background-color: black;
+    z-index: 971;
+    left: 0;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    width: 100%;
+    transition: visibility 0s, opacity 0.5s linear;
+    visibility: visible;
+    opacity: 1;
+  }
+  .list-menu li {
+    display: inline-block;
+  }
+  nav .nav-izq {
+    width: 50%;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: start;
+  }
+  nav .nav-izq .logo {
+    order: 1;
+  }
+  nav .nav-izq .open-menu-mobile {
+    order: 2;
+    margin-left: 1rem;
+  }
+  nav {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+}
+
+@media (min-width: 550px) and (max-width: 639px) {
+  .card .card-item {
+    height: 9rem;
+  }
+}
+@media (min-width: 450px ) and (max-width: 549px) {
+  .card .card-item {
+    height: 7.5rem;
+  }
+}
+@media (min-width: 640px ) and (max-width: 768px) {
+  .card .card-item {
+    height: 8.5rem;
+  }
+}
+@media (min-width: 924px) {
+  .card .card-item {
+    height: 10rem;
+  }
+}
+@media (min-width: 1024px) {
+  .card .card-item {
+    width: 32%;
+    height: 10rem;
+  }
+
+  .popular-keepflix h2 {
+    padding: 0.5rem 0.7rem;
+}
+}

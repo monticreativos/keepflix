@@ -1,0 +1,66 @@
+@media all and (min-width:768px){
+  .imagen-fondo-solid {
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    background-image:url('../assets/img/fondo.jpg') ;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+  .imagen-fondo-solid.black::before{
+    content: '';
+    top: 0;
+    left: 0;
+    background-color:rgba(0,0,0, 0.63);
+    z-index: 99;
+    width: 100%;
+    height: 100vh;
+    position:absolute ;
+  }
+  .imagen-fondo {
+    height: 100vh;
+    position: absolute;
+    width: 100%;
+    top: 0;
+  }
+  .app {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    display: block;
+
+  }
+
+  header .logo {
+    width: 200px;
+    margin: 1.5rem 0 0 2rem;
+  }
+
+  .app .login {
+    max-width: 450px;
+    background-color: rgba(0,0,0, 0.7);
+    margin: 0 auto;
+    padding: 5rem 3rem;
+  }
+  .suscribete .suscribete-ya {
+    margin-top: 2rem;
+  }
+  footer{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0,0,0, 0.7);
+    width: 100%;
+    padding: 0.5rem;
+  }
+  .footer-divider {
+    display: none;
+  }
+}

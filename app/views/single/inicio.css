@@ -1,0 +1,194 @@
+body {
+  background-color: black;
+  color: white;
+}
+
+.btn {
+  padding: 0.5rem 1rem;
+  font-family: 'Helvetica';
+  font-size: 0.75rem;
+  background-color: white;
+  border-radius: 0.2rem;
+  margin: 1rem 0;
+  display: block;
+  max-width: 170px;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+  transition: all 0.5s ease-in-out;
+}
+.btn:hover {
+  background-color: #666;
+  color: white;
+}
+/* Header */
+header {
+  padding-top: 3.6rem;
+}
+
+header .titulo {
+  position: absolute;
+  top: 8rem;
+  left: 7%;
+  max-width: 315px;
+}
+header .titulo h1 {
+  font-size: 1.75rem;
+  font-family: 'Helvetica';
+}
+header .titulo a {
+  cursor: pointer;
+  z-index: 9999;
+  position: relative;
+}
+header .titulo a i {
+  vertical-align: middle;
+}
+header .titulo p {
+  font-size: 0.7rem;
+  font-family: 'Helvetica';
+}
+
+header .info-pelicula {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  font-family: 'Helvetica';
+}
+
+header .info-pelicula .columna-izq {
+  width: 100%;
+  padding: 1.2rem;
+  text-align: justify;
+}
+
+header .info-pelicula .columna-dch {
+  width: 100%;
+  padding: 1.2rem;
+}
+
+header .info-pelicula .columna-dch p {
+  margin: 0;
+  font-size: 0.8rem;
+  margin-bottom: 0.5rem;
+}
+
+header .info-pelicula .columna-izq p {
+  margin: 0;
+  font-size: 0.8rem;
+}
+
+header .reparto p span, header .genero p span, header .mas-info p span {
+  color: #666;
+  font-size: 0.8rem;
+}
+/* Section lista */
+.popular-keepflix h2 {
+  padding: 0.5rem;
+  font-family: 'Helvetica';
+  font-size: 0.8rem;
+
+}
+.card {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.card .card-item {
+  width: 100%;
+  margin-bottom: 0.4rem;
+  position: relative;
+  height: 9rem;
+  display: block;
+  overflow: hidden;
+  cursor: pointer;
+  padding: 1rem 1rem 0 1rem;
+}
+#cardItem1:hover .card-info-item1, #cardItem2:hover .card-info-item2, #cardItem3:hover .card-info-item3, #cardItem4:hover .card-info-item4, #cardItem5:hover .card-info-item5, #cardItem6:hover .card-info-item6 {
+  visibility: visible;
+  opacity: 1;
+}
+.card .card-info-item {
+  width: 100%;
+  height: 102%;
+  background-color: rgba(000, 000, 000, 0.85);
+  position: relative;
+  z-index: 99;
+  top: -8px;
+  left: 0;
+  text-align: end;
+  visibility: hidden;
+  transition: visibility 0s, opacity 0.5s linear;
+  opacity: 0;
+}
+.card .card-img-item{
+  position:absolute;
+  z-index: 80;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  padding: 1rem;
+}
+.card .card-info-item span {
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+  width: 60%;
+  text-align: center;
+  font-family: 'Helvetica';
+  font-size: 0.8rem;
+}
+.card .card-info-item a {
+  color: white;
+}
+
+.card .like {
+  display: block;
+  margin: 0.5rem;
+  cursor: pointer;
+  padding: 0.5rem;
+}
+
+.card .like i {
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: 99;
+}
+
+.card .like label {
+  cursor: pointer;
+}
+
+footer {
+  width: 100%;
+  height: auto;
+}
+footer aside ol {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: baseline;
+}
+footer aside ol li {
+    display: block;
+    width: 25%;
+    height: auto;
+    padding: 1rem;
+    text-align: center;
+    font-family: 'Helvetica';
+}
+footer aside ol li a {
+  font-size: 0.8rem;
+  text-decoration: none;
+  color: #666;
+  transition: all 0.5s ease-in-out;
+}
+footer aside ol li a:hover {
+  color: white;
+}

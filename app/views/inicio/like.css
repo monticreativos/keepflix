@@ -1,0 +1,25 @@
+.card .like .hover-i, .card .like .hover-i2, .card .like .hover-i3, .card .like .hover-i4, .card .like .hover-i5,.card .like .hover-i6 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 0.5rem;
+  display: none;
+  z-index: 88;
+  padding: 0 0.5rem;
+}
+
+#like-checkbox, #like-checkbox2, #like-checkbox3, #like-checkbox4, #like-checkbox5, #like-checkbox6 {
+  width: 25px;
+  height: 25px;
+  margin: 0;
+  display: none;
+}
+
+#like-checkbox:checked~.hover-i, #like-checkbox2:checked~.hover-i2, #like-checkbox3:checked~.hover-i3, #like-checkbox4:checked~.hover-i4, #like-checkbox5:checked~.hover-i5, #like-checkbox6:checked~.hover-i6 {
+  display: block;
+}
+
+#like-checkbox~.hover-i, #like-checkbox2~.hover-i2, #like-checkbox3~.hover-i3, #like-checkbox4~.hover-i4, #like-checkbox5~.hover-i5, #like-checkbox6~.hover-i6 {
+  display: none;
+}
+
